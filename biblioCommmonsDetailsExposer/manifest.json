@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 3,
+  "name": "View Details Exposer",
+  "version": "1.0",
+
+  "description": "Exposes the \"view details\" button on bibliocommons so now you don't have to click on it to see where an item is!",
+
+  "icons": {
+    "48": "icons/noViewDetails48.png",
+    "96": "icons/noViewDetails96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.bibliocommons.com/v2/search?*"],
+      "js": ["exposeViewDetails.js"]
+    }
+  ],
+  
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "alx168@gmail.com"
+    }
+  }
+
+
+}
