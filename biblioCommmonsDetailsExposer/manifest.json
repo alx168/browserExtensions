@@ -1,6 +1,5 @@
 {
-
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "View Details Exposer",
   "version": "1.0",
 
@@ -22,7 +21,11 @@
     "gecko": {
       "id": "alx168@gmail.com"
     }
-  }
+  },
+
+  "permissions": [
+    "*://*.bibliocommons.com/v2/search?*"
+  ]
 
 
 }
